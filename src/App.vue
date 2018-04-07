@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <LoadingTemplate/>
-  </div>
+    <h1>{{app_name}}</h1>
+    <router-view></router-view>
+  </div>  
 </template>
 
 <script>
 
-import LoadingTemplate from './routes/loading/loading-template.vue';
+import { APP_NAME } from '~/helpers/dictionary';
 
 export default {
   name: 'app',
-  components: {
-    LoadingTemplate
+  props: {
+    //TODO: REFACTOR
+    app_name: {
+      default: APP_NAME
+    }
   }
 }
 </script>
@@ -23,7 +27,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
   align-content: center;
   width: 100%;
 }

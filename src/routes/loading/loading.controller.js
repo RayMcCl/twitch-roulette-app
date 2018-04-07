@@ -1,7 +1,7 @@
 import { LOADING_MESSAGES } from '~/helpers/dictionary';
 
 export default {
-  name: 'home',
+  name: 'loading',
   props: {
     msg: String
   },

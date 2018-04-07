@@ -6,5 +6,5 @@
 </template>
 
 <!-- Component Loader -->
-<script src='./loading-controller.js' />
-<style src='./loading-style.scss' scoped />
+<script src='./loading.controller.js' />
+<style src='./loading.style.scss' scoped />
