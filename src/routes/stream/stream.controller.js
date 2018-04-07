@@ -1,4 +1,5 @@
 import StreamPlayer from '~/components/stream-player/stream-player.template';
+import StreamStats from '~/components/stream-stats/stream-stats.template';
 
 export default {
     name: 'stream',
@@ -11,6 +12,7 @@ export default {
         }
     },
     components: {
-        StreamPlayer
+        StreamPlayer,
+        StreamStats
     },
 }

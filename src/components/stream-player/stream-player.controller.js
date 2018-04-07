@@ -24,7 +24,6 @@ export default {
         },
         embedPlayer: function () {
             if(!this.embeded){
-                console.log('Setting stream to:', this.stream);
                 this.embeded = new Twitch.Embed("twitch-embed", {
                     width: 854,
                     height: 480,
@@ -33,8 +32,6 @@ export default {
             } else {
                 this.embeded.getPlayer().setChannel(this.stream);
             }
-
-            console.log(this.embeded);
         }
     }
 }
