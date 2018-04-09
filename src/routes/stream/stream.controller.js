@@ -5,6 +5,12 @@ import { mapState, mapActions } from 'vuex';
 export default {
     name: 'stream',
     computed: mapState(['stream']),
+    beforeMount: function () {
+        console.log('Test', this);
+        if(Object.keys(this.stream.data).length === 0){
+            this.getRandomStream();
+        }
+    },
     methods: {
         getRandomStream () {
             this.$router.push('/loading');
