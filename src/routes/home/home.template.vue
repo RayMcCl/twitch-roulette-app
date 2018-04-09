@@ -1,6 +1,7 @@
 <template>
     <div>
         <h1>Welcome!</h1>
+        <button v-on:click="getRandomStream">Show me a stream!</button>
     </div>
 </template>
 

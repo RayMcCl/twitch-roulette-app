@@ -27,10 +27,10 @@ export default {
                 this.embeded = new Twitch.Embed("twitch-embed", {
                     width: 854,
                     height: 480,
-                    channel: this.stream
+                    channel: this.stream.stream_name
                 });
             } else {
-                this.embeded.getPlayer().setChannel(this.stream);
+                this.embeded.getPlayer().setChannel(this.stream.stream_name);
             }
         }
     }

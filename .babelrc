@@ -8,6 +8,7 @@
       "alias": {
         "~": "./src/"
       }
-    }]
+    }],
+    "transform-object-rest-spread"
   ]
 }

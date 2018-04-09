@@ -1,6 +1,18 @@
 <template>
     <div>
         <h1>Stream Stats</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td><b>Followers</b></td>
+                    <td>{{stream.followers}}</td>
+                </tr>
+                <tr>
+                    <td><b>Views</b></td>
+                    <td>{{stream.views}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </template>
 
