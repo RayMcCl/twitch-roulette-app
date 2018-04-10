@@ -17,7 +17,7 @@ export default {
             this.$store
                 .dispatch('setRandomStream')
                 .then((res) => {
-                    this.$router.push('/stream');
+                    this.$router.push('/stream/' + this.stream.data.stream_name);
                 });
         }
     },

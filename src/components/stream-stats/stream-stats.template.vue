@@ -4,6 +4,10 @@
         <table>
             <tbody>
                 <tr>
+                    <td><b>Language</b></td>
+                    <td>{{stream.language}}</td>
+                </tr>
+                <tr>
                     <td><b>Followers</b></td>
                     <td>{{stream.followers}}</td>
                 </tr>

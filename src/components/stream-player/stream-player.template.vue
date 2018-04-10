@@ -1,5 +1,5 @@
 <template>
-    <div id="twitch-embed" />
+    <div id="twitch-embed" class="stream-player" />
 </template>
 
 <!-- Component Loader -->

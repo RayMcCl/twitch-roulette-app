@@ -25,8 +25,9 @@ export default {
         embedPlayer: function () {
             if(!this.embeded){
                 this.embeded = new Twitch.Embed("twitch-embed", {
-                    width: 854,
-                    height: 480,
+                    width: '100%',
+                    height: '100%',
+                    layout: 'video',
                     channel: this.stream.stream_name
                 });
             } else {

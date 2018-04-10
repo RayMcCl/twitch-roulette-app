@@ -17,7 +17,7 @@ export default [
         component: LoadingTemplate 
     },
     { 
-        path: '/stream', 
+        path: '/stream/:stream_name', 
         component: StreamTemplate 
     },
     { 
