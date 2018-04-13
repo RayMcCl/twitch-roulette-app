@@ -12,7 +12,7 @@
 
 import axios from 'axios';
 
-const API = 'https://streamroulette.net/api/streams';
+const API = 'https://streamroulette.net/api/live-stream';
 
 class APIService {
     constructor () {
@@ -20,7 +20,7 @@ class APIService {
     }
 
     getRandomStream () {
-        return axios.get(API);
+        return axios.get(API + '?limit=1&random');
     }
 }
 

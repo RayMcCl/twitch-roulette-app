@@ -28,7 +28,7 @@ export default {
                 API
                     .getRandomStream()
                     .then((res) => {
-                        commit('setStream', res.data);
+                        commit('setStream', res.data[0]);
                         resolve();
                     })
                     .catch(() => {
