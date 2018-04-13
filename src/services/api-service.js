@@ -12,7 +12,7 @@
 
 import axios from 'axios';
 
-const API = 'http://localhost:3000/api/streams';
+const API = 'https://streamroulette.net/api/streams';
 
 class APIService {
     constructor () {
