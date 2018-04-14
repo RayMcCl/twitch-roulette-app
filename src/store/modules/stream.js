@@ -39,7 +39,8 @@ export default {
     },
     mutations: {
         setStream (state, data) {
-            state.data = data
+            	console.log(data);
+		state.data = data
         }
     }
 }
