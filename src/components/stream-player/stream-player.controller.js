@@ -1,7 +1,7 @@
 export default {
     name: 'stream-player',
     props: {
-        stream: String
+        stream: Object
     },
     watch: { 
         stream: function () {
@@ -23,10 +23,9 @@ export default {
             }
         },
         embedPlayer: function () {
+            console.log(this.stream);
             if(!this.embeded){
                 this.embeded = new Twitch.Embed("twitch-embed", {
-                    width: '100%',
-                    height: '100%',
                     layout: 'video',
                     channel: this.stream.stream_name
                 });

@@ -19,6 +19,14 @@ export default {
                 .then((res) => {
                     this.$router.push('/stream/' + this.stream.data.stream_name);
                 });
+        },
+        getPreviousStream () {
+            this.$router.push('/loading');
+            this.$store
+                .dispatch('setPreviousStream')
+                .then((res) => {
+                    this.$router.push('/stream/' + this.stream.data.stream_name);
+                });
         }
     },
     components: {

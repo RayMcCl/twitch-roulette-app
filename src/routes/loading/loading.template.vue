@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img class="spinner rotating" src="~/assets/logo.png">
+        <img class="spinner rotating" src="~/assets/img/logo.png">
         <h1 class="stream-loading">{{ getRandomMessage }}</h1>
     </div>
 </template>

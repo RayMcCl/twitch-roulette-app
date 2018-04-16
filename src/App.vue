@@ -1,7 +1,22 @@
 <template>
+  
   <div id="app">
-    <h1>{{app_name}}</h1>
-    <router-view></router-view>
+    <b-navbar toggleable="md" type="light" variant="light">
+      <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+
+      <b-navbar-brand href="/">Home</b-navbar-brand>
+
+      <b-collapse is-nav id="nav_collapse">
+
+        <b-navbar-nav>
+          <b-nav-item href="#/games">Games</b-nav-item>
+          <b-nav-item href="#/stats">Stats</b-nav-item>
+        </b-navbar-nav>
+
+        <!-- Right aligned nav items -->
+      </b-collapse>
+    </b-navbar>
+    <router-view class="container"></router-view>
   </div>  
 </template>
 
@@ -26,9 +41,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 20px;
   align-content: center;
   width: 100%;
+}
+
+.container {
+  margin-top: 1em;
 }
 </style>

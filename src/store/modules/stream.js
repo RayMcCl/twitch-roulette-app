@@ -6,18 +6,22 @@
  * @author Ray McClain
  * @desc 
  * 
- * Last Modified: Monday, 9th April 2018 11:12:07 am
+ * Last Modified: Sunday, 15th April 2018 4:06:07 pm
  * Modified By: Ray McClain (reibmc@gmail.com>)
  */
 
 import API from '~/services/api-service';
 
+const MAX_PREVIOUS = 10;
+
 export default {
     state: {
-        data: {}
+        data: {},
+        previousData: []
     },
     getters: {
-        data: state => state.data
+        data: state => state.data,
+        previousData: state => state.previousData
     },
     actions: {
         setStream ({commit}, data) {
@@ -35,12 +39,25 @@ export default {
                         reject();
                     });
             });
+        },
+        setPreviousStream ({commit}) {
+            commit('setPreviousStream');
         }
     },
     mutations: {
         setStream (state, data) {
-            	console.log(data);
-		state.data = data
+            state.previousData.push(state.data);
+            
+            if(state.previousData.length > MAX_PREVIOUS) {
+                state.previousData.shift();
+            }
+
+            state.data = data;
+        },
+        setPreviousStream (state, data) {
+            if(state.previousData.length > 1){
+                state.data = state.previousData.pop();
+            }
         }
     }
 }

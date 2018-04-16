@@ -1,5 +1,9 @@
 <template>
-    <div id="twitch-embed" class="stream-player" />
+    <b-embed id="twitch-embed" type="object"
+            aspect="16by9"
+            allowfullscreen
+    >
+    </b-embed>
 </template>
 
 <!-- Component Loader -->

@@ -1,7 +1,7 @@
 export default {
     name: 'stream-stats',
     props: {
-        stream: String
+        stream: Object
     },
     watch: { 
         stream: function () {
