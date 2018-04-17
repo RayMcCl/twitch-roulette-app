@@ -26,7 +26,9 @@ export const LOADING_MESSAGES = [
     'Why must you say such things to me?',
     'Put that AWAY!',
     'Check out The Official Podcast :)',
-    '[INSERT CLEVER LOADING MESSAGE HERE]'
+    '[INSERT CLEVER LOADING MESSAGE HERE]',
+    'Joining the Cool Patrol...',
+    'Eating food in the shower...'
 ];
 
 export const ERROR_MESSAGES = [
