@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "watch": "parcel src/index.html -no-minify -o ./dist/index.html",
-    "build": "parcel src/index.html"
+    "build": "parcel build ./src/index.html"
   },
   "dependencies": {
     "axios": "^0.18.0",
