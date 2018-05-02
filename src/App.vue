@@ -1,17 +1,26 @@
 <template>
+  
   <div id="app">
-    <LoadingTemplate/>
-  </div>
+    <Navbar />
+    <router-view class="container"></router-view>
+  </div>  
 </template>
 
 <script>
 
-import LoadingTemplate from './routes/loading/loading-template.vue';
+import { APP_NAME } from '~/helpers/dictionary';
+import Navbar from '~/components/navbar/navbar.template';
 
 export default {
   name: 'app',
+  props: {
+    //TODO: REFACTOR
+    app_name: {
+      default: APP_NAME
+    }
+  },
   components: {
-    LoadingTemplate
+    Navbar
   }
 }
 </script>
@@ -22,9 +31,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
   align-content: center;
   width: 100%;
+}
+
+.container {
+  margin-top: 1em;
 }
 </style>

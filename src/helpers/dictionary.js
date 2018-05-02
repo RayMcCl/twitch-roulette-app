@@ -1,3 +1,5 @@
+export const APP_NAME = "Stream Roulette";
+
 export const LOADING_MESSAGES = [
     'The hamsters only run so fast...',
     'My toaster is rebooting...',
@@ -24,5 +26,13 @@ export const LOADING_MESSAGES = [
     'Why must you say such things to me?',
     'Put that AWAY!',
     'Check out The Official Podcast :)',
-    '[INSERT CLEVER LOADING MESSAGE HERE]'
+    '[INSERT CLEVER LOADING MESSAGE HERE]',
+    'Joining the Cool Patrol...',
+    'Eating food in the shower...'
+];
+
+export const ERROR_MESSAGES = [
+    'Well this is awkward...',
+    'This is not the page you are looking for.',
+    'Try pressing Up + Down + Left + Right' // TODO: Include simple game on error page
 ];
